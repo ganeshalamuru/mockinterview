@@ -22,6 +22,12 @@ dependencies {
 	runtimeOnly("com.mysql:mysql-connector-j")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("com.fasterxml.jackson.core:jackson-databind:2.16.1")
+	implementation("javax.validation:validation-api:2.0.1.Final")
+	implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.4")
+	implementation ("org.springframework.boot:spring-boot-starter-jdbc")
+	compileOnly("org.projectlombok:lombok:1.18.38")
+	annotationProcessor("org.projectlombok:lombok:1.18.38")
 }
 
 tasks.withType<Test> {
