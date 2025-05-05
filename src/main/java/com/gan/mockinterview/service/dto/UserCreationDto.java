@@ -1,6 +1,7 @@
 package com.gan.mockinterview.service.dto;
 
 import com.gan.mockinterview.model.User;
+import com.gan.mockinterview.model.enums.UserStatus;
 import lombok.Getter;
 
 import javax.validation.constraints.NotBlank;
@@ -21,6 +22,7 @@ public class UserCreationDto {
                 .id(UUID.randomUUID().toString())
                 .firstName(getFirstName())
                 .lastName(getLastName())
+                .status(UserStatus.IDLE.name())
                 .displayName(getDisplayName())
                 .build();
     }
